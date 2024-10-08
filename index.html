@@ -3,10 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <title>portfolio</title>
-    <link rel="icon" type="image/x-icon" href="assets/image/black_logo.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        header{
+            position: fixed;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            z-index: 9;
+            width: 100%;
+            height: 80px;
+            margin: 0;
+            backdrop-filter: blur(50px);
+        }
+        .header-nav{
+            width: 100%;
+            position: fixed;
+            padding-left: 1.25rem /* 20px */;
+            padding-right: 1.25rem /* 20px */;
+            padding-top: 0.75rem /* 16px */;
+            padding-bottom: 1rem /* 16px */;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 50;
+        }
+        @media (min-width: 1024px) {
+            .header-nav{
+                padding-left: 2rem /* 32px */;
+                padding-right: 2rem /* 32px */;
+            }
+        }
+        @media (min-width: 1280px) {
+            .header-nav{
+                padding-left: 8%;
+                padding-right: 8%;
+            }
+        }
+        .logo{
+            width:52px ;
+            cursor: pointer;
+            margin-right: 50px;
+        }
+
+        .custom-ul {
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            .custom-ul {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem; /* Equivalent to gap-6 */
+                padding-left: 3rem; /* Equivalent to px-12 */
+                padding-right: 3rem;
+                padding-top: 0.75rem; /* Equivalent to py-3 */
+                padding-bottom: 0.75rem;
+                background-color: rgba(255, 255, 255, 0.5); /* bg-opacity-50 */
+                border-radius: 9999px; /* Equivalent to rounded-full */
+                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .custom-ul {
+                gap: 2rem; /* Equivalent to lg:gap-8 */
+            }
+        }
+        .moon-contact{
+            display: flex;
+            align-items: center;
+            gap: 1rem /* 16px */;
+        }
+
+        .moon{
+            width: 1.5rem /* 24px */;
+        }
+        .header-a1{
+            display: none;
+            align-items: center;
+            gap: 0.75rem /* 12px */;
+            padding-left: 2.5rem /* 40px */;
+            padding-right: 2.5rem /* 40px */;
+            padding-top: 0.625rem /* 10px */;
+            padding-bottom: 0.625rem /* 10px */;
+            border-width: 2px;
+            border-color: rgb(120, 8, 154); /* #6b7280 */
+            border-radius: 9999px;
+            margin-left: 30px;
+        }
+        @media (min-width: 1024px) {
+            .header-a1-1024 {
+                display: flex;
+            }
+        }
+        .hire_icon{
+            width: 25px;
+        }
+
+
+        .menu-button {
+            display: block;
+            margin-left: 0.75rem; /* Equivalent to ml-3 */
+        }
+
+
+        @media (min-width: 768px) {
+            .menu-button {
+                display: none;
+            }
+            .logo{
+                width:70px ;
+
+            }
+        }
+        .menu{
+            width: 1.5rem /* 24px */;
+
+        }
+        /* Mobile Menu Styles */
+        .mobile-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 5rem 2.5rem;
+            position: fixed;
+            right: -16rem;
+            top: 0;
+            bottom: 0;
+            width: 16rem;
+            z-index: 50;
+            height: 100vh;
+            background-color: #fef2f2;
+            transition: right 0.5s;
+        }
+
+        /* Close Button Styles */
+        .close-button {
+            position: absolute;
+            right: 1.5rem;
+            top: 1.5rem;
+            cursor: pointer;
+        }
+
+        .close-icon {
+            width: 1.25rem;
+        }
+
+        /* Show menu when active */
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        /* Menu Link Styles */
+        .mobile-menu li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 1.125rem;
+        }
+
+
+    </style>
 </head>
 <body>
 
+<header>
+    <nav class="header-nav">
+        <!--header-->
+        <img class="logo" src="./assets/image/logo.png" alt="Logo" >
+        <ul class="custom-ul">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>
+        <div class="moon-contact ">
+            <button><img src="./assets/image/moon.png" alt="" class="moon"></button>
+            <a href="#contact"
+               class="header-a1 header-a1-1024 "
+            >Hire me <img src="./assets/image/hireIcon.jpg" class="hire_icon" alt="">
 
+            </a>
+
+            <button class="menu-button" onclick="openMenu()">
+                <img src="./assets/image/menu.png" alt="" class="menu">
+            </button>
+        </div>
+
+
+        <!-- Mobile Menu -->
+        <ul id="sideMenu" class="mobile-menu">
+            <!-- Close Button -->
+            <div class="close-button" onclick="closeMenu()">
+                <img src="./assets/image/closejpg.png" alt="Close Menu" class="close-icon">
+            </div>
+            <li><a href="#top" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About me</a></li>
+            <li><a href="#service" onclick="closeMenu()">Service</a></li>
+            <li><a href="#work" onclick="closeMenu()">Work</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
+        </ul>
+    </nav>
+
+
+
+</header>
+
+
+
+
+
+<script>
+
+
+</script>
 </body>
 </html>
