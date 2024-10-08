@@ -3,10 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <title>portfolio</title>
-    <link rel="icon" type="image/x-icon" href="assets/image/black_logo.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+
+    </style>
 </head>
 <body>
 
+<header>
+    <nav class="header-nav">
+        <!--header-->
+        <img class="logo" src="./assets/image/logo.png" alt="Logo" >
+        <ul class="custom-ul">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>
+        <div class="moon-contact">
+            <button><img src="./assets/image/moon.png" alt="" class="moon"></button>
+            <a href="#contact"
+               class="header-a1 header-a1-1024 "
+            >Hire me
 
+            </a>
+
+            <button class="menu-button" onclick="openMenu()">
+                <img src="./assets/image/menu.png" alt="" class="menu">
+            </button>
+        </div>
+
+
+        <!-- Mobile Menu -->
+        <ul id="sideMenu" class="mobile-menu">
+            <!-- Close Button -->
+            <div class="close-button" onclick="closeMenu()">
+                <img src="./assets/image/closejpg.png" alt="Close Menu" class="close-icon">
+            </div>
+            <li><a href="#top" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About me</a></li>
+            <li><a href="#service" onclick="closeMenu()">Service</a></li>
+            <li><a href="#work" onclick="closeMenu()">Work</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!--hero section-->
+<div class="hero">
+    <div class="hero-pic">
+        <img src="./assets/image/profile.png"  alt="" >
+    </div>
+
+    <h2 class=" hero-h2"><span class="input">I'm Lakmal kumarasiri</span></h2>
+    <h1 class="hero-h1 ">Undergraduate and passionate programmer from Sri Lanka.</h1>
+
+
+    <p class=" hero-p">A dedicated software engineer with expertise in web development. I specialize in creating responsive and user-friendly web applications using technologies like PHP, HTML, CSS, and Java. With a passion for clean code and problem-solving, I aim to build efficient and impactful digital solutions."</p>
+    <div class=" hero-div">
+        <a href="#contact"
+           class="hero-button-hire " >hire me </a>
+
+        <a href="./assets/image/profile.png" download
+           class="hero-cv">Download cv </a>
+    </div>
+</div>
+
+
+
+
+<script>
+
+
+</script>
 </body>
 </html>
