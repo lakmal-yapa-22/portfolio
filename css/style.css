@@ -1,10 +1,9 @@
 
 *{
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
-    text-decoration: none;
-  overflow: hidden;
+       box-sizing: border-box;
+
 }
 a{
     text-decoration: none;
@@ -114,7 +113,7 @@ header{
     margin-left: 30px;
 }
 @media (min-width: 1024px) {
-    .header-a1-1024 {
+    .header-a1{
         display: flex;
     }
 }
@@ -190,7 +189,7 @@ header{
     margin-right: auto;
     height: 100vh;
     position: relative;
-    top: 40px;
+    top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -247,7 +246,7 @@ header{
 }
 @media (min-width: 640px) {
     .hero-h1 {
-        font-size: 2.6rem /* 60px */;
+        font-size: 3rem /* 60px */;
         line-height:0.96;
 
     }
@@ -284,6 +283,8 @@ header{
     border-radius: 10px;
     background-color: #008bbf;
     display: flex;
+    color: white;
+    font-weight: 100;
     align-items: center;
     gap: 0.5rem /* 8px */;
     border: 2px solid #ffffff;
@@ -301,7 +302,197 @@ header{
     align-items: center;
     gap: 0.5rem /* 8px */;
     background-color: #ffffff;
-    border: 2px solid#008bbf;
+    border: 2px solid #008bbf;
 
 
+}
+.download-icon{
+    width: 30px;
+}
+
+
+
+
+/* about */
+
+
+
+.about-container {
+    width: 100%;
+    padding: 3rem 12%;
+
+
+}
+
+.heading-secondary {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+}
+
+.heading-primary {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.about-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+@media(min-width: 1024px) {
+    .about-flex {
+        flex-direction: column;
+    }
+    .about-image {
+       display: none;
+
+
+    }
+
+}
+@media(min-width: 1276px) {
+
+    .about-image {
+        display: flex;
+    }
+    .about-flex {
+        flex-direction: row;
+    }
+
+
+}
+
+.image-container {
+    max-width: 100%;
+    position: relative;
+}
+
+.about-image {
+    width: 30rem;
+    max-width: 100%;
+    border-radius: 1.5rem;
+    margin: 0;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    margin-bottom: 2.5rem;
+    max-width: 45rem;
+    line-height: 1.6;
+}
+
+.about-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 45rem;
+}
+
+@media(min-width: 768px) {
+    .about-list {
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+@media(min-width: 425px) {
+    .about-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width: 1024px) {
+    .about-list {
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+
+
+.about-list-item {
+    border: 0.5px solid #ccc;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-list-item:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.05);
+    background-color:white ;
+
+}
+
+.list-icon {
+    width: 1.75rem;
+    margin-top: 1.5rem;
+
+}
+img.list-icon {
+    display: block;
+    width: 1.75rem;
+    margin: 0.75rem auto 0; /* centers the icon horizontally */
+}
+
+.about-list-item h3 {
+    margin-top: 1.3rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.about-list-item p {
+    color: #666;
+    font-size: 1rem;
+    margin-top: 1.3rem;
+    font-weight: 300;
+}
+
+.tools-heading {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.tools-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+@media(min-width: 640px) {
+    .tools-list {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media(min-width: 1024px) {
+    .tools-list {
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
+
+.tool-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.tool-item:hover {
+    transform: translateY(-0.25rem);
+}
+
+.tool-item img {
+    width: 1.25rem;
 }
