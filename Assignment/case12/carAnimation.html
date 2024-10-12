@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>carAnimation</title>
+    <link rel="stylesheet" href="Assest/css/normalize.css">
+    <style>
+        body{
+            overflow: hidden;
+        }
+        main{
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background: url("./Assest/image/sky.jpg");
+            background-size: cover;
+            margin: 0;
+            background-position: center;
+        }
+        .car{
+            height: 150px;
+            width: 320px;
+            bottom: 18%;
+            position: fixed;
+            margin-left: 400px;
+        }
+        .wheel{
+            position: fixed;
+            width: 65px;
+            height: 65px;
+            bottom: 20%;
+            animation: rotate-animation 10s infinite;
+        }
+        #wheel01{
+            margin-left: 422px;
+        }
+        #wheel02{
+            margin-left: 620px;
+        }
+        .road{
+            position: absolute;
+            width: 300vw;
+            height: 35%;
+            bottom: 0;
+            margin-left: 0;
+            animation: moving-animation 10s infinite;
+        }
+        .city{
+            position: absolute;
+            width: 300vw;
+            height: 65%;
+            bottom: 35%;
+            margin-left: 0;
+            animation: moving-animation 10s infinite;
+        }
+        @keyframes rotate-animation {
+            0%{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(720deg);
+            }
+            100%{
+                transform: rotate(540deg);
+            }
+
+        }
+        @keyframes moving-animation {
+            0%{
+                transform: translateX(0px);
+            }
+            100%{
+                transform: translateX(-2000px);
+            }
+
+        }
+    </style>
+</head>
+<body>
+<main>
+    <img class="city" src="./Assest/image/city.png" alt="">
+    <img class="road" src="./Assest/image/road.jpg" alt="">
+    <img class="car" src="./Assest/image/car.png" alt="">
+    <img class="wheel" id="wheel01" src="./Assest/image/wheel.png" alt="">
+    <img class="wheel" id="wheel02" src="./Assest/image/wheel.png" alt="">
+
+</main>
+
+</body>
+</html>

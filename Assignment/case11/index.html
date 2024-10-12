@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case-05 image slider</title>
+    <link rel="stylesheet" href="assests/css/normalize.css">
+    <style>
+        body{
+            overflow: hidden;
+        }
+        section{
+            position: absolute;
+            animation: slide;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes slide {
+            0%,20% {
+                margin-left: 0;
+            }
+            25%,45% {
+                margin-left: -100vw;
+            }
+            50%,70% {
+                margin-left: -200vw;
+            }
+
+            75% {
+                margin-left: -300vw;
+            }
+            /*100% {*/
+            /*    margin-left: -400vw;*/
+            /*}*/
+
+        }
+        img{
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+        }
+        img:nth-child(2){
+            margin-left: 100vw;
+        }
+        img:nth-child(3){
+            margin-left: 200vw;
+        }
+        img:nth-child(4){
+            margin-left: 300vw;
+        }
+        img:nth-child(5){
+            margin-left: 400vw;
+        }
+        img:nth-child(6){
+            margin-left: 500vw;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <img src="assests/image/slide1.jpeg" alt="">
+    <img src="assests/image/slide2.jpeg" alt="">
+    <img src="assests/image/slide3.jpeg" alt="">
+    <img src="assests/image/slide4.jpeg" alt="">
+</section>
+</body>
+</html>

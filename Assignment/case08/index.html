@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        #div1{
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background: #4a4949;
+            border-radius: 100%;
+            text-align: center;
+        /border: 15px solid white;/
+        /border-top: 15px solid red;/
+
+        }
+
+        h1{
+            position: absolute;
+            top: 120px;
+            bottom: 0;
+            left: 0px;
+            right: 0;
+            margin: auto;
+            color: white;
+
+
+        }
+
+        div::before{
+            content: "";
+            border: 15px solid white;
+            border-top-color: red;
+
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 100%;
+
+        }
+        div:hover::before{
+                             transform: rotate(360deg);
+                             transition-duration: 2s;
+
+        }
+
+
+
+
+        body{
+            background: darkblue;
+        }
+    </style>
+
+</head>
+<body>
+
+<div id="div1">
+    <h1>RAWD</h1>
+</div>
+
+
+</body>
+
+</html>
