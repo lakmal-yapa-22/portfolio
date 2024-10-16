@@ -422,9 +422,7 @@
         display: grid;
         gap: 20px;
         grid-template-columns: repeat(1, 1fr);
-        .content-box{
-            width: 90%;
-        }
+
 
     }
 
@@ -432,6 +430,7 @@
         .grid-container {
             grid-template-columns: repeat(2, 1fr);
         }
+
     }
 
     @media (min-width: 1024px) {
@@ -445,64 +444,78 @@
         width: 100%;
         padding-top: 100%;
         cursor: pointer;
-        border: 1px solid  #ccc;
-    }
+        border: 1px solid #ccc;
+    }  .project {
+           position: relative;
+           height: 300px;
+           background-size: cover;
+           background-position: center;
+           border-radius: 10px;
+           cursor: pointer;
+           overflow: hidden;
+       }
 
-    .content-box {
+    .project-info {
         position: absolute;
-      top: 50%;
-        bottom: 5%;
+        bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
-        width: 30%;
-        background-color: white;
-
-        padding: 10px 20px;
-
+        width: 80%;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 15px 20px;
+        display: flex;
         justify-content: space-between;
         align-items: center;
         transition: bottom 0.5s ease;
+    }
+
+    .project:hover .project-info {
+        bottom: 25px;
+    }
+
+    .project-title {
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+    .project-type {
+        color: #777;
+    }
+
+    .icon-container {
         border: 1px solid #ccc;
-    }
-
-   .icon-box:hover {
-        bottom: 100%;
-       background: black;
-    }
-
-    .title {
-        font-weight: 600;
-        margin: 0;
-    }
-
-    .subtitle {
-        font-size: 0.875rem;
-        color: gray;
-        margin: 0;
-    }
-
-    .icon-box {
-        border: 2px solid black;
         border-radius: 50%;
-        width: 36px;
-        height: 36px;
+        width: 40px;
+        height: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 2px 2px 0px black;
+        box-shadow: 2px 2px 0 #000;
         transition: background-color 0.3s ease;
-
-
-
-
     }
 
+    .project:hover .icon-container {
+        background-color: #c1c3b9;
+        border: 1px solid #ccc;
+    }
 
-    .icon-image {
+    .project-icon {
         width: 20px;
-        height: 20px;
-
     }
+
+    /* Background Image Styling */
+    .div2 {
+
+        background-image: url(./assets/image/project/project01.png);
+        background-size: 100%;
+        background-position: top ;
+
+
+
+        background-repeat: no-repeat;
+    }
+
 </style>
 
 
@@ -510,95 +523,351 @@
 <div class="work-container">
     <h4 class="text-center title-lg">My Project</h4>
 
+
     <p class="text-description">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla vitae illum fuga itaque officiis voluptatibus optio praesentium a, dignissimos voluptates neque minima quam quas ipsum accusantium harum blanditiis numquam molestiae.
     </p>
 
     <div class="grid-container">
-        <!-- project01 -->
+        <!-- Project 01 -->
         <div class="project div2">
-            <div class="content-box">
+            <div class="project-info">
                 <div>
-                    <h2 class="title">font project</h2>
-                    <p class="subtitle">Lorem ipsum dolor sit  quisquam quos soluta suscipit tenetur.</p>
+                    <h2 class="project-title">Student Managerment System</h2>
+                    <p class="project-type">HTML,CSS,PHP</p>
                 </div>
-                <div class="icon-box">
-                    <img src="./assets/image/tools/github.png" alt="" class="icon-image">
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- project02 -->
-        <div class="project div2">
-            <div class="content-box">
-                <div>
-                    <h2 class="title">font project</h2>
-                    <p class="subtitle">web Design</p>
-                </div>
-                <div class="icon-box">
-                    <img src="./assets/image/tools/github.png" alt="" class="icon-image">
+                <div class="icon-container">
+                    <img src="./assets/image/tools/github.png" alt="Project Icon" class="project-icon">
                 </div>
             </div>
         </div>
 
-        <!-- project03 -->
+        <!-- Project 01 -->
         <div class="project div2">
-            <div class="content-box">
+            <div class="project-info">
                 <div>
-                    <h2 class="title">font project</h2>
-                    <p class="subtitle">web Design</p>
+                    <h2 class="project-title">Font Project</h2>
+                    <p class="project-type">Web Design</p>
                 </div>
-                <div class="icon-box">
-                    <img src="./assets/image/tools/github.png" alt="" class="icon-image">
+                <div class="icon-container">
+                    <img src="./assets/image/tools/github.png" alt="Project Icon" class="project-icon">
                 </div>
             </div>
         </div>
 
-        <!-- project04 -->
+        <!-- Project 01 -->
         <div class="project div2">
-            <div class="content-box">
+            <div class="project-info">
                 <div>
-                    <h2 class="title">font project</h2>
-                    <p class="subtitle">web Design</p>
+                    <h2 class="project-title">Font Project</h2>
+                    <p class="project-type">Web Design</p>
                 </div>
-                <div class="icon-box">
-                    <img src="./assets/image/tools/github.png" alt="" class="icon-image">
+                <div class="icon-container">
+                    <img src="./assets/image/tools/github.png" alt="Project Icon" class="project-icon">
                 </div>
             </div>
         </div>
 
-        <!-- project05 -->
+        <!-- Project 01 -->
         <div class="project div2">
-            <div class="content-box">
+            <div class="project-info">
                 <div>
-                    <h2 class="title">font project</h2>
-                    <p class="subtitle">web Design</p>
+                    <h2 class="project-title">Font Project</h2>
+                    <p class="project-type">Web Design</p>
                 </div>
-                <div class="icon-box">
-                    <img src="./assets/image/tools/github.png" alt="" class="icon-image">
+                <div class="icon-container">
+                    <img src="./assets/image/tools/github.png" alt="Project Icon" class="project-icon">
                 </div>
             </div>
         </div>
 
-        <!-- project06 -->
+        <!-- Project 01 -->
         <div class="project div2">
-            <div class="content-box">
+            <div class="project-info">
                 <div>
-                    <h2 class="title">font project</h2>
-                    <p class="subtitle">web Design</p>
+                    <h2 class="project-title">Font Project</h2>
+                    <p class="project-type">Web Design</p>
                 </div>
-                <div class="icon-box">
-                    <img src="./assets/image/tools/github.png" alt="" class="icon-image">
+                <div class="icon-container">
+                    <img src="./assets/image/tools/github.png" alt="Project Icon" class="project-icon">
                 </div>
             </div>
         </div>
+
 
 
     </div>
 </div>
 
+
+
+<!--contact-->
+<style>
+
+
+    .new_contact_area {
+        background: #ffffff;
+        margin-top: 5%;
+    }
+
+    .new_contact_top {
+        padding: 0px 0px 100px;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .new_contact_top .company_widget p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 28px;
+        color: #6a7695;
+        margin-bottom: 20px;
+    }
+
+    .new_contact_top .f_social_icon a {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        font-size: 14px;
+        line-height: 45px;
+        color: #858da8;
+        background: #ebeef5;
+        text-align: center;
+        display: inline-block;
+        margin-left: 4px;
+        transition: all 0.2s linear;
+    }
+
+    .new_contact_top .f_social_icon a:hover {
+        background: #5e2ced;
+        border-color: #5e2ced;
+        color: white;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #4b505e;
+    }
+
+    .new_contact_top .contact_bg {
+        position: absolute;
+        bottom: 0;
+        background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigB8iI5tb8WSVBuVUGc9UjjB8O0708X7Fdic_4O1LT4CmLHoiwhanLXiRhe82yw0R7LgACQ2IhZaTY0hhmGi0gYp_Ynb49CVzfmXtYHUVKgXXpWvJ_oYT8cB4vzsnJLe3iCwuzj-w6PeYq_JaHmy_CoGoa6nw0FBo-2xLdOPvsLTh_fmYH2xhkaZ-OGQ/s16000/footer_bg.png") no-repeat center;
+        width: 100%;
+        height: 266px;
+    }
+
+    .new_contact_top .contact_bg_one {
+        background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEia0PYPxwT5ifToyP3SNZeQWfJEWrUENYA5IXM6sN5vLwAKvaJS1pQVu8mOFFUa_ET4JuHNTFAxKURFerJYHDUWXLXl1vDofYXuij45JZelYOjEFoCOn7E6Vxu0fwV7ACPzArcno1rYuVxGB7JY6G7__e4_KZW4lTYIaHSLVaVLzklZBLZnQw047oq5-Q/s16000/volks.gif") no-repeat center;
+        width: 330px;
+        height: 105px;
+        background-size: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        animation: myfirst 22s linear infinite;
+    }
+
+    .new_contact_top .contact_bg_two{
+        background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyLGwEUVwPK6Vi8xXMymsc-ZXVwLWyXhogZxbcXQYSY55REw_0D4VTQnsVzCrL7nsyjd0P7RVOI5NKJbQ75koZIalD8mqbMquP20fL3DxsWngKkOLOzoOf9sMuxlbyfkIBTsDw5WFUj-YJiI50yzgVjF8cZPHhEjkOP_PRTQXDHEq8AyWpBiJdN9SfQA/s16000/cyclist.gif") no-repeat center;
+        width: 88px;
+        height: 100px;
+        background-size: 100%;
+        bottom: 0;
+        left: 38%;
+        position: absolute;
+        animation: myfirst 30s linear infinite;
+    }
+
+    @keyframes myfirst {
+        0% {
+            left: -25%;
+        }
+        100% {
+            left: 100%;
+        }
+    }
+
+    /* Contact Form Styling */
+    #contact {
+        background-color: #ffffff;
+    }
+
+    #contact h4, #contact h2 {
+        text-align: center;
+    }
+
+    #contact h4 {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    #contact h2 {
+        font-size: 40px;
+    }
+
+    #contact p {
+        text-align: center;
+        max-width: 800px;
+        margin: 20px auto;
+    }
+
+    form {
+        max-width: 800px;
+        margin: 40px auto;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .button-contact {
+        display: block;
+        background-color: #008bbf;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 20px auto;
+        transition: background-color 0.3s;
+    }
+
+   .button-contact:hover {
+        background-color: #333;
+    }
+
+</style>
+
+
+<div class="new_contact_area">
+    <div class="new_contact_top">
+        <div id="contact">
+            <h4>Get in touch</h4>
+            <h2>Contact me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, nam! Dolorem repellat sed perspiciatis doloremque eius molestias praesentium, asperiores fuga vitae vero sunt id nemo vel. Nostrum deleniti minima quam!</p>
+
+            <form>
+                <input type="text" placeholder="Enter your name" required>
+                <input type="email" placeholder="Enter your email" required>
+                <textarea rows="6" placeholder="Enter your message" required></textarea>
+                <button class="button-contact" type="submit">Submit now</button>
+            </form>
+        </div>
+
+        <div >
+            <div class="contact_bg">
+                <div class="contact_bg_one"></div>
+                <div class="contact_bg_two"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>Lakmal Kumarasiri</h3>
+            <p>Web Developer | Software Engineer</p>
+            <p>Email: lakmal2001yapa@gmail.com</p>
+            <p>Phone: +94 71 3346 662</p>
+        </div>
+
+        <div class="footer-right">
+            <h4>Follow Me</h4>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="assets/image/footer/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="assets/image/footer/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="assets/image/footer/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com" target="_blank">
+                    <img src="assets/image/footer/github%20(1).png" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    </div>
+</footer>
+<style>
+    /* General footer styles */
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+
+    .footer-left, .footer-right {
+        flex-basis: 45%;
+        text-align: left;
+    }
+
+    .footer-left h3, .footer-right h4 {
+        margin-bottom: 10px;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+        display: inline-block;
+    }
+
+    .social-icons img {
+        width: 30px;
+        height: 30px;
+        filter: invert(1);
+    }
+
+    .footer-bottom {
+        margin-top: 20px;
+        border-top: 1px solid #555;
+        padding-top: 10px;
+    }
+
+    .footer-bottom p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    /* Responsive styling for mobile screens */
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer-left, .footer-right {
+            flex-basis: 100%;
+            margin-bottom: 20px;
+        }
+
+        .footer-left, .footer-right {
+            text-align: center;
+        }
+
+        .social-icons a {
+            margin: 0 5px;
+        }
+    }
+
+</style>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
 
