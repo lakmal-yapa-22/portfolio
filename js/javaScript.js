@@ -11,3 +11,19 @@ var typed = new Typed(".input", {
     backSpeed: 50,
     loop: true
 });
+const toggleCheckbox = document.getElementById('darkmode-toggle');
+const body = document.body;
+
+toggleCheckbox.addEventListener('change', () => {
+    if (toggleCheckbox.checked) {
+        body.classList.add('dark-mode');
+        body.classList.remove('light-mode');
+    } else {
+        body.classList.add('light-mode');
+        body.classList.remove('dark-mode');
+    }
+});
+
+
+
+

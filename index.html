@@ -6,6 +6,9 @@
     <title>portfolio</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <style>
 
 
@@ -22,10 +25,17 @@
             <li><a href="#about">About me</a></li>
             <li><a href="#service">Service</a></li>
             <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact me</a></li>
+            <li><a href="#contact-me">Contact me</a></li>
         </ul>
         <div class="moon-contact">
-            <button><img src="./assets/image/moon.png" alt="" class="moon"></button>
+            <input class="input-mode" type="checkbox" id="darkmode-toggle">
+            <label for="darkmode-toggle"></label>
+
+
+
+
+<!--            <button id="theme-toggle"><img src="./assets/image/moon.png" alt="" class="moon toggle-btn"></button>-->
+
             <a href="#contact"
                class="header-a1"
             >Hire me
@@ -71,6 +81,18 @@
 
         <a href="./assets/image/profile.png" download
            class="hero-cv">Download cv <img src="./assets/image/DownloadIcon.jpg" alt="" class="download-icon"></a>
+    </div>
+    <br>
+    <div>  <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a> <!-- GitHub -->
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a> <!-- WhatsApp -->
+        <a href="#"><i class="fa-brands fa-telegram"></i></a> <!-- Telegram -->
+    </div>
     </div>
 </div>
 
@@ -140,12 +162,12 @@
             <li class="tool-item"><img src="./assets/image/tools/icons8-intellij-idea-48.png" alt="IntelliJ IDEA"></li>
             <li class="tool-item"><img src="./assets/image/tools/figma.png" alt="Figma"></li>
 
-            <li class="tool-item"><img src="./assets/image/tools/mysql.png" alt="MySQL"></li>
+            <li class="tool-item"><img src="./assets/image/tools/mysql1.png" alt="MySQL"></li>
 
             <li class="tool-item"><img src="./assets/image/tools/Hibernate.png" alt="Hibernate"></li>
-            <li class="tool-item"><img src="./assets/image/tools/lombok.jpeg" alt="Lombok"></li>
+            <li class="tool-item"><img src="./assets/image/tools/lombok-.png" alt="Lombok"></li>
             <li class="tool-item"><img src="./assets/image/tools/bootstrap.png" alt="Bootstrap"></li>
-            <li class="tool-item"><img src="./assets/image/tools/download%20(14).png" alt="html"></li>
+            <li class="tool-item"><img src="./assets/image/tools/html-5.png" alt="html"></li>
             <li class="tool-item"><img src="./assets/image/tools/images__5_-removebg-preview.png" alt="js"></li>
             <li class="tool-item"><img src="./assets/image/tools/Java.png" alt="java"></li>
             <li class="tool-item"><img src="./assets/image/tools/python.png" alt="python"></li>
@@ -378,226 +400,130 @@
 </div>
 <!--///project-->
 <!-- work -->
-<style>
-    .div2 {
-        background-image: url(./assets/image/project/project01.png);
-        background-size: 100%;
-        background-position: top ;
 
-
-
-        background-repeat: no-repeat;
-    }
-
-    .work-container {
-        width: 100%;
-
-
-
-    }
-
-    .text-center {
-        text-align: center;
-    }
-
-    .title-lg {
-        margin-bottom: 8px;
-        font-size: 1.125rem;
-    }
-
-    .title-xl {
-        font-size: 3rem;
-    }
-
-    .text-description {
-        margin-top: 20px;
-        margin-bottom: 48px;
-        max-width: 640px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .grid-container {
-        display: grid;
-        gap: 20px;
-        grid-template-columns: repeat(1, 1fr);
-        .content-box{
-            width: 90%;
-        }
-
-    }
-
-    @media (min-width: 768px) {
-        .grid-container {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-
-    @media (min-width: 1024px) {
-        .grid-container {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
-
-    .project {
-        position: relative;
-        width: 100%;
-        padding-top: 100%;
-        cursor: pointer;
-        border: 1px solid  #ccc;
-    }
-
-    .content-box {
-        position: absolute;
-      top: 50%;
-        bottom: 5%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 30%;
-        background-color: white;
-
-        padding: 10px 20px;
-
-        justify-content: space-between;
-        align-items: center;
-        transition: bottom 0.5s ease;
-        border: 1px solid #ccc;
-    }
-
-   .icon-box:hover {
-        bottom: 100%;
-       background: black;
-    }
-
-    .title {
-        font-weight: 600;
-        margin: 0;
-    }
-
-    .subtitle {
-        font-size: 0.875rem;
-        color: gray;
-        margin: 0;
-    }
-
-    .icon-box {
-        border: 2px solid black;
-        border-radius: 50%;
-        width: 36px;
-        height: 36px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 2px 2px 0px black;
-        transition: background-color 0.3s ease;
-
-
-
-
-    }
-
-
-    .icon-image {
-        width: 20px;
-        height: 20px;
-
-    }
-</style>
 
 
 
 <div class="work-container">
     <h4 class="text-center title-lg">My Project</h4>
 
+
     <p class="text-description">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla vitae illum fuga itaque officiis voluptatibus optio praesentium a, dignissimos voluptates neque minima quam quas ipsum accusantium harum blanditiis numquam molestiae.
-    </p>
+        "A showcase of innovative projects, including smart field management, POS, and campus website using PHP, Java, AI."    </p>
 
     <div class="grid-container">
-        <!-- project01 -->
-        <div class="project div2">
-            <div class="content-box">
+        <!-- Project 01 -->
+        <div class="project div2" id="img1">
+            <div class="project-info">
                 <div>
-                    <h2 class="title">font project</h2>
-                    <p class="subtitle">Lorem ipsum dolor sit  quisquam quos soluta suscipit tenetur.</p>
+                    <h2 class="project-title">Student Managerment System</h2>
+                    <p class="project-type">HTML,CSS,PHP</p>
                 </div>
-                <div class="icon-box">
-                    <img src="./assets/image/tools/github.png" alt="" class="icon-image">
-                </div>
+                <div class="icon-container">
+                    <a href="https://github.com/lakmal-yapa-22/Student_Mangerment_System_Assignment_IMBS_Campus.git">  <img src="./assets/image/tools/github.png" alt="Project Icon" class="project-icon"></a>
 
-            </div>
-
-        </div>
-
-        <!-- project02 -->
-        <div class="project div2">
-            <div class="content-box">
-                <div>
-                    <h2 class="title">font project</h2>
-                    <p class="subtitle">web Design</p>
-                </div>
-                <div class="icon-box">
-                    <img src="./assets/image/tools/github.png" alt="" class="icon-image">
                 </div>
             </div>
         </div>
 
-        <!-- project03 -->
-        <div class="project div2">
-            <div class="content-box">
+        <!-- Project 02 -->
+        <div class="project div2" id="img2">
+            <div class="project-info">
                 <div>
-                    <h2 class="title">font project</h2>
-                    <p class="subtitle">web Design</p>
+                    <h2 class="project-title">Stock Management System</h2>
+                    <p class="project-type">Java,(CLI)</p>
                 </div>
-                <div class="icon-box">
-                    <img src="./assets/image/tools/github.png" alt="" class="icon-image">
+                <div class="icon-container">
+                    <a href="https://github.com/lakmal-yapa-22/prf_coursework.git">  <img src="./assets/image/tools/github.png" alt="Project Icon" class="project-icon"></a>
+
                 </div>
             </div>
         </div>
 
-        <!-- project04 -->
-        <div class="project div2">
-            <div class="content-box">
+        <!-- Project 03 -->
+        <div class="project div2" id="img3">
+            <div class="project-info">
                 <div>
-                    <h2 class="title">font project</h2>
-                    <p class="subtitle">web Design</p>
+                    <h2 class="project-title">Connect 4 Game</h2>
+                    <p class="project-type">Java
+                        ,maven </p>
                 </div>
-                <div class="icon-box">
-                    <img src="./assets/image/tools/github.png" alt="" class="icon-image">
+                <div class="icon-container">
+                    <a href="https://github.com/lakmal-yapa-22/Connect-4-Game-JAVA.git">  <img src="./assets/image/tools/github.png" alt="Project Icon" class="project-icon"></a>
+
+                </div>
+            </div>
+        </div>
+        <!-- Project 04 -->
+        <div class="project div2" id="img4">
+            <div class="project-info">
+                <div>
+                    <h2 class="project-title">Garment Managerment System</h2>
+                    <p class="project-type">Java
+                        ,maven,mysql </p>
+                </div>
+                <div class="icon-container">
+                    <a href="https://github.com/lakmal-yapa-22/Garment-Management-System-MVC.git">  <img src="./assets/image/tools/github.png" alt="Project Icon" class="project-icon"></a>
+
+                </div>
+            </div>
+        </div>
+        <!-- Project 05 -->
+        <div class="project div2" id="img5">
+            <div class="project-info">
+                <div>
+                    <h2 class="project-title">POS System</h2>
+                    <p class="project-type">Bootstrap css,javaScript </p>
+                </div>
+                <div class="icon-container">
+                    <a href="https://github.com/lakmal-yapa-22/POS-system.git">  <img src="./assets/image/tools/github.png" alt="Project Icon" class="project-icon"></a>
+
                 </div>
             </div>
         </div>
 
-        <!-- project05 -->
-        <div class="project div2">
-            <div class="content-box">
-                <div>
-                    <h2 class="title">font project</h2>
-                    <p class="subtitle">web Design</p>
-                </div>
-                <div class="icon-box">
-                    <img src="./assets/image/tools/github.png" alt="" class="icon-image">
-                </div>
-            </div>
-        </div>
-
-        <!-- project06 -->
-        <div class="project div2">
-            <div class="content-box">
-                <div>
-                    <h2 class="title">font project</h2>
-                    <p class="subtitle">web Design</p>
-                </div>
-                <div class="icon-box">
-                    <img src="./assets/image/tools/github.png" alt="" class="icon-image">
-                </div>
-            </div>
-        </div>
 
 
     </div>
 </div>
+
+
+
+<!--contact-->
+
+
+<div class="new_contact_area">
+    <div class="new_contact_top">
+        <div id="contact">
+            <h4>Get in touch</h4>
+            <h2 id="contact-me">Contact me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, nam! Dolorem repellat sed perspiciatis doloremque eius molestias praesentium, asperiores fuga vitae vero sunt id nemo vel. Nostrum deleniti minima quam!</p>
+
+            <form id="contactForm">
+                <input type="text" placeholder="Enter your name" required>
+                <input type="email" placeholder="Enter your email" required>
+                <textarea rows="6" placeholder="Enter your message" required></textarea>
+                <button class="button-contact" type="submit">Submit now</button>
+            </form>
+
+        </div>
+
+        <div class="animation-bg" >
+            <div class="contact_bg">
+                <div class="contact_bg_one"></div>
+                <div class="contact_bg_two"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Lakmal . All Rights Reserved.</p>
+
+    </div>
+</footer>
+
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
