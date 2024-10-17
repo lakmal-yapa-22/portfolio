@@ -1027,7 +1027,7 @@ body.dark-mode {
     .hero-p{
         color: #a6a6a6;
     }
-    .heading-primary,.project-title{
+    .heading-primary,.project-title,#contact-me{
         color: white;
     }
     .about-text,.title-large,.section-title-large{
@@ -1036,6 +1036,9 @@ body.dark-mode {
    .about-list-item,.service-item{
        background: white;
    }
+    .project-title{
+        color: #959595;
+    }
 }
 
 body.dark-mode button.toggle-btn {
