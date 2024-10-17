@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,13 +19,13 @@
 <header>
     <nav class="header-nav">
         <!--header-->
-        <img class="logo" src="./assets/image/logo.png" alt="Logo" >
+        <img class="logo" src="./assets/image/logo1.png" alt="Logo" >
         <ul class="custom-ul">
-            <li><a href="#top">Home</a></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#service">Service</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact-me">Contact me</a></li>
+            <li ><a href="#top" class="text-nav">Home</a></li>
+            <li ><a href="#about" class="text-nav">About me</a></li>
+            <li ><a href="#service" class="text-nav">Service</a></li>
+            <li><a href="#work" class="text-nav">Work</a></li>
+            <li ><a href="#contact-me " class="text-nav">Contact me</a></li>
         </ul>
         <div class="moon-contact">
             <input class="input-mode" type="checkbox" id="darkmode-toggle">
@@ -34,7 +34,7 @@
 
 
 
-            <!--            <button id="theme-toggle"><img src="./assets/image/moon.png" alt="" class="moon toggle-btn"></button>-->
+<!--            <button id="theme-toggle"><img src="./assets/image/moon.png" alt="" class="moon toggle-btn"></button>-->
 
             <a href="#contact"
                class="header-a1"
@@ -43,7 +43,7 @@
             </a>
 
             <button class="menu-button" onclick="openMenu()">
-                <img src="./assets/image/menu.png" alt="" class="menu">
+                <img src="./assets/image/menu-bar%20(1).png" alt="" class="menu">
             </button>
         </div>
 
@@ -54,11 +54,11 @@
             <div class="close-button" onclick="closeMenu()">
                 <img src="./assets/image/closejpg.png" alt="Close Menu" class="close-icon">
             </div>
-            <li><a href="#top" onclick="closeMenu()">Home</a></li>
-            <li><a href="#about" onclick="closeMenu()">About me</a></li>
-            <li><a href="#service" onclick="closeMenu()">Service</a></li>
-            <li><a href="#work" onclick="closeMenu()">Work</a></li>
-            <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
+            <li><a href="#top" onclick="closeMenu()" class="menu-text">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()" class="menu-text">About me</a></li>
+            <li><a href="#service" onclick="closeMenu()" class="menu-text">Service</a></li>
+            <li><a href="#work" onclick="closeMenu()" class="menu-text">Work</a></li>
+            <li><a href="#contact" onclick="closeMenu()" class="menu-text">Contact me</a></li>
         </ul>
     </nav>
 
@@ -66,11 +66,25 @@
 
 <!--hero section-->
 <div class="hero">
-    <div class="hero-pic">
-        <img src="./assets/image/profile.png"  alt="" >
+
+
+
+
+<!--    <div class="hero-pic">-->
+<!--        <img src="./assets/image/pp1.png"  alt="" >-->
+
+<!--    </div>-->
+
+
+    <div class="circle">
+        <div class="logos">
+            <img src="./assets/image/pp1.png" alt="Logo">
+        </div>
+        <div class="text"></div>
     </div>
 
-    <h2 class=" hero-h2"><span class="input">I'm Lakmal kumarasiri</span></h2>
+
+    <h2 class=" hero-h2"><span class="input"></span></h2>
     <h1 class="hero-h1 ">Undergraduate programmer from  Sri Lanka.</h1>
 
 
@@ -154,6 +168,12 @@
         </div>
     </div>
 
+
+
+
+
+
+
     <div>
 
         <h4 class="tools-heading">Tools & Technologies</h4>
@@ -179,6 +199,41 @@
 </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--service-->
 <div id="service" class="service-container">
     <h4 class="title-small">What I'm doing</h4>
@@ -190,13 +245,13 @@
             <img src="./assets/image/servise/web.png" alt="code icon" class="service-icon">
             <h3 class="service-title">Web Development</h3>
             <p class="service-description"> It is not just one of the promising careers but one of the blooming fields with rapid digitization and demand for businesses online. </p>
-        </div>
+       </div>
 
         <div class="service-item">
             <img src="./assets/image/servise/sftwre.png" alt="code icon" class="service-icon">
             <h3 class="service-title">Software Development</h3>
             <p class="service-description">Software developers use programming and design knowledge to build software that meets the needs of users</p>
-        </div>
+              </div>
         <div class="service-item">
             <img src="./assets/image/servise/webDesign.png" alt="code icon" class="service-icon">
             <h3 class="service-title">Web Design</h3>
@@ -207,12 +262,12 @@
             <img src="./assets/image/servise/social.png" alt="code icon" class="service-icon">
             <h3 class="service-title">Social Media</h3>
             <p class="service-description">A service is an application component that can perform long-running...</p>
-        </div>
+          </div>
         <div class="service-item">
             <img src="./assets/image/servise/streamer.png" alt="code icon" class="service-icon">
             <h3 class="service-title">Streamer</h3>
             <p class="service-description">A service is an application component that can perform long-running...</p>
-        </div>
+       </div>
 
 
 
@@ -232,13 +287,13 @@
         <!-- Assignment01 -->
         <div class="project-item ">
             <a href="Assignment/case01/case01.html">
-                <img src="./assets/image/assignment/asignment01.png" class="assignment-img" alt="">
+            <img src="./assets/image/assignment/asignment01.png" class="assignment-img" alt="">
 
-                <div class="project-details">
+            <div class="project-details">
 
                     <h2 class="project-title">-Absolute Position-</h2>
 
-                </div>
+            </div>
             </a>
 
         </div>
@@ -310,21 +365,21 @@
             </a>
 
 
-        </div>
+    </div>
 
-        <!-- Assignment07 -->
-        <div class="project-item ">
-            <a href="Assignment/case07/index.html">
-                <img src="./assets/image/assignment/assignment07.png" class="assignment-img" alt="">
+    <!-- Assignment07 -->
+    <div class="project-item ">
+        <a href="Assignment/case07/index.html">
+            <img src="./assets/image/assignment/assignment07.png" class="assignment-img" alt="">
 
-                <div class="project-details">
+            <div class="project-details">
 
-                    <h2 class="project-title">-transition for navigation-</h2>
+                <h2 class="project-title">-transition for navigation-</h2>
 
-                </div>
-            </a>
+            </div>
+        </a>
 
-        </div>
+    </div>
 
         <!-- Assignment08 -->
         <div class="project-item ">
@@ -398,8 +453,6 @@
 
     </div>
 </div>
-
-
 <!--///project-->
 <!-- work -->
 
@@ -411,8 +464,7 @@
 
 
     <p class="text-description">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla vitae illum fuga itaque officiis voluptatibus optio praesentium a, dignissimos voluptates neque minima quam quas ipsum accusantium harum blanditiis numquam molestiae.
-    </p>
+        "A showcase of innovative projects, including smart field management, POS, and campus website using PHP, Java, AI."    </p>
 
     <div class="grid-container">
         <!-- Project 01 -->
@@ -423,7 +475,7 @@
                     <p class="project-type">HTML,CSS,PHP</p>
                 </div>
                 <div class="icon-container">
-                    <a href="https://github.com/lakmal-yapa-22/Student_Mangerment_System_Assignment_IMBS_Campus.git"> <img src="./assets/image/tools/github.png" alt="Project Icon" class="project-icon"></a>
+                    <a href="https://github.com/lakmal-yapa-22/Student_Mangerment_System_Assignment_IMBS_Campus.git">  <img src="./assets/image/tools/github.png" alt="Project Icon" class="project-icon"></a>
 
                 </div>
             </div>
@@ -434,10 +486,10 @@
             <div class="project-info">
                 <div>
                     <h2 class="project-title">Stock Management System</h2>
-                    <p class="project-type">java,CLI</p>
+                    <p class="project-type">Java,(CLI)</p>
                 </div>
                 <div class="icon-container">
-                    <a href="https://github.com/lakmal-yapa-22/prf_coursework.git">   <img src="./assets/image/tools/github.png" alt="Project Icon" class="project-icon"></a>
+                    <a href="https://github.com/lakmal-yapa-22/prf_coursework.git">  <img src="./assets/image/tools/github.png" alt="Project Icon" class="project-icon"></a>
 
                 </div>
             </div>
@@ -447,11 +499,12 @@
         <div class="project div2" id="img3">
             <div class="project-info">
                 <div>
-                    <h2 class="project-title">Connect-4-Game</h2>
-                    <p class="project-type">java,javaFX</p>
+                    <h2 class="project-title">Connect 4 Game</h2>
+                    <p class="project-type">Java
+                        ,maven </p>
                 </div>
                 <div class="icon-container">
-                    <a href="https://github.com/lakmal-yapa-22/Connect-4-Game-JAVA.git"> <img src="./assets/image/tools/github.png" alt="Project Icon" class="project-icon"></a>
+                    <a href="https://github.com/lakmal-yapa-22/Connect-4-Game-JAVA.git">  <img src="./assets/image/tools/github.png" alt="Project Icon" class="project-icon"></a>
 
                 </div>
             </div>
@@ -461,32 +514,24 @@
             <div class="project-info">
                 <div>
                     <h2 class="project-title">Garment Managerment System</h2>
-                    <p class="project-type">java,javaFX,maven</p>
+                    <p class="project-type">Java
+                        ,maven,mysql </p>
                 </div>
                 <div class="icon-container">
-                    <a href="https://github.com/lakmal-yapa-22/Garment-Management-System-MVC.git"> <img src="./assets/image/tools/github.png" alt="Project Icon" class="project-icon"></a>
+                    <a href="https://github.com/lakmal-yapa-22/Garment-Management-System-MVC.git">  <img src="./assets/image/tools/github.png" alt="Project Icon" class="project-icon"></a>
 
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
         <!-- Project 05 -->
         <div class="project div2" id="img5">
             <div class="project-info">
                 <div>
                     <h2 class="project-title">POS System</h2>
-                    <p class="project-type">HTML,css,javaScript</p>
+                    <p class="project-type">Bootstrap css,javaScript </p>
                 </div>
                 <div class="icon-container">
-                    <a href="https://github.com/lakmal-yapa-22/POS-system.git">   <img src="./assets/image/tools/github.png" alt="Project Icon" class="project-icon"></a>
+                    <a href="https://github.com/lakmal-yapa-22/POS-system.git">  <img src="./assets/image/tools/github.png" alt="Project Icon" class="project-icon"></a>
 
                 </div>
             </div>
@@ -498,8 +543,8 @@
 </div>
 
 
-<!--contact-->
 
+<!--contact-->
 
 <div class="new_contact_area">
     <div class="new_contact_top">
@@ -508,15 +553,26 @@
             <h2 id="contact-me">Contact me</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, nam! Dolorem repellat sed perspiciatis doloremque eius molestias praesentium, asperiores fuga vitae vero sunt id nemo vel. Nostrum deleniti minima quam!</p>
 
-            <form>
-                <input type="text" placeholder="Enter your name" required>
-                <input type="email" placeholder="Enter your email" required>
-                <textarea rows="6" placeholder="Enter your message" required></textarea>
+            <form method="POST" id="contactForm" action="https://api.web3forms.com/submit" class="form">
+                <!-- Hidden access key required for Web3Forms API -->
+                <input type="hidden" name="access_key" value="75c6c35c-fe7e-43de-a276-9132f049437e">
+
+                <!-- User Name Input -->
+                <input class="placeholder" type="text" placeholder="Enter your name" required name="name">
+
+                <!-- Email Input -->
+                <input class="placeholder" type="email" placeholder="Enter your email" required name="email">
+
+                <!-- Message Input -->
+                <textarea class="placeholder" rows="6" placeholder="Enter your message" required name="message"></textarea>
+
+                <!-- Submit Button -->
                 <button class="button-contact" type="submit">Submit now</button>
             </form>
         </div>
 
-        <div >
+        <!-- Background Animation Section -->
+        <div class="animation-bg">
             <div class="contact_bg">
                 <div class="contact_bg_one"></div>
                 <div class="contact_bg_two"></div>
@@ -524,14 +580,27 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
 <footer>
     <div class="footer-content">
-        <p>&copy; 2024 Lakmal POS System. All Rights Reserved.</p>
+        <p>&copy; 2024 Lakmal . All Rights Reserved.</p>
 
     </div>
 </footer>
 
+
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
- <script src="./js/javaScript.js"></script>
+
+<script src="./js/javaScript.js"></script>
 </body>
 </html>

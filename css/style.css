@@ -60,7 +60,7 @@ header{
     }
 }
 .logo{
-    width:52px ;
+    width:72px ;
     cursor: pointer;
     margin-right: 100px;
 }
@@ -69,7 +69,11 @@ header{
     display: none;
 }
 
-
+.text-nav:hover {
+    color: transparent;
+    -webkit-text-stroke: 1px #008bbf;
+    position: relative;
+}
 @media (min-width: 768px) {
     .custom-ul {
         display: flex;
@@ -132,7 +136,7 @@ header{
         display: none;
     }
     .logo{
-        width:70px ;
+        width:100px ;
 
     }
 }
@@ -153,7 +157,7 @@ header{
     width: 16rem;
     z-index: 50;
     height: 100vh;
-    background-color: #fef2f2;
+    background-color: #ffffff;
     transition: right 0.5s;
 }
 
@@ -200,26 +204,25 @@ header{
 
 }
 
-.hero-pic{
-    width: 200px;
-    height: 200px;
+/*.hero-pic{*/
+/*    width: 200px;*/
+/*    height: 210px;*/
 
-    border-radius: 100%;
-    overflow: hidden;
-
-    box-shadow: 3px 7px 25px rgba(0, 0, 0, 0.5);
-
-    background-color: white;
-
-    border: 2px solid transparent;
-    z-index: -10;
-}
-.hero-pic img{
-    width: 100%;
-    height: 100%;
+/*    border-radius: 100%;*/
+/*    overflow: hidden;*/
 
 
-}
+/*    background-color: white;*/
+/*    box-shadow: 3px 7px 25px rgba(0, 0, 0, 0.5);*/
+/*    border: 2px solid transparent;*/
+/*    z-index: -10;*/
+/*!*}*!*/
+/*.hero-pic img{*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+
+
+/*}*/
 .hero-h2{
     display: flex;
     align-items: flex-end;
@@ -836,12 +839,14 @@ margin-top: 30px;
 .new_contact_area {
     background: #ffffff;
     margin-top: 5%;
+
 }
 
 .new_contact_top {
     padding: 0px 0px 100px;
     position: relative;
     overflow-x: hidden;
+
 }
 
 .new_contact_top .company_widget p {
@@ -851,7 +856,9 @@ margin-top: 30px;
     color: #6a7695;
     margin-bottom: 20px;
 }
-
+.animation-bg{
+    margin-top: 200px;
+}
 .new_contact_top .f_social_icon a {
     width: 46px;
     height: 46px;
@@ -962,6 +969,7 @@ input, textarea {
     cursor: pointer;
     margin: 20px auto;
     transition: background-color 0.3s;
+
 }
 
 .button-contact:hover {
@@ -1011,17 +1019,29 @@ body.light-mode button.toggle-btn {
 body.dark-mode {
     background-color: #1e1e1e;
     color: #f1f1f1;
-    .animation-bg{
 
-    }
-    .new_contact_area{
+    .new_contact_area,.hero-pic{
         background-color: #1e1e1e;
     }
 
-    #contact {
+    .circle{
+
+
+
+        box-shadow: 3px 7px 25px rgb(128, 128, 128);
+
+        background-color: #1e1e1e;
+
+
+
+
+    }
+
+    #contact,.mobile-menu {
         background-color: #1e1e1e;
     }
-    .hero-h1{
+    .hero-h1,.menu-text{
+
         color: white;
     }
     .hero-p{
@@ -1111,8 +1131,49 @@ label:active:after{
 
 
 
-
-
-
-
+.circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 3px 7px 25px rgba(0, 0, 0, 0.5);
+    border: 2px solid transparent;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logos {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden; /* Ensure the image stays within the circle */
+}
+.logos img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Cover the container without distortion */
+}
+.text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotateText 10s linear infinite;
+    font-family: Consolas, 'Courier New', Courier, monospace;
+}
+@keyframes rotateText {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.text span {
+    position: absolute;
+    left: 50%;
+    font-size: 1.2em;
+    transform-origin: 0 100px;
+}
 
