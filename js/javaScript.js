@@ -31,3 +31,53 @@ textContainer.innerHTML = textContent.split("").map(
 
 
 
+
+let currentIndex = 0;
+
+function showSlide(index) {
+    const carousel = document.querySelector('.carousel');
+    const cards = document.querySelectorAll('.card');
+    const totalSlides = cards.length;
+
+    if (index >= totalSlides) {
+        currentIndex = 0;
+    } else if (index < 0) {
+        currentIndex = totalSlides - 1;
+    } else {
+        currentIndex = index;
+    }
+
+    const offset = -currentIndex * (cards[0].offsetWidth + 30); // 30px for margin
+    carousel.style.transform = `translateX(${offset}px)`;
+}
+
+function nextSlide() {
+    showSlide(currentIndex + 1);
+}
+
+function prevSlide() {
+    showSlide(currentIndex - 1);
+}
+
+// Open YouTube video in modal
+function openVideo(videoUrl) {
+    const modal = document.getElementById('videoModal');
+    const iframe = document.getElementById('videoFrame');
+    iframe.src = videoUrl + '?autoplay=1'; // Autoplay the video
+    modal.style.display = 'flex';
+}
+
+// Close video modal
+function closeVideo() {
+    const modal = document.getElementById('videoModal');
+    const iframe = document.getElementById('videoFrame');
+    iframe.src = ''; // Stop the video
+    modal.style.display = 'none';
+}
+
+window.onload = () => {
+    showSlide(currentIndex);
+};
+
+
+// project
