@@ -30,7 +30,7 @@ It showcases my skills, projects, and provides contact information in a clean, r
 
 ## Project Demo Video
 
-[![Watch the demo](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+[![Watch the demo](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/GVD22PEFy8w)
 
 Click the image above to watch the demo video.
 
